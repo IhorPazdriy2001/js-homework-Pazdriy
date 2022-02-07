@@ -1,0 +1,62 @@
+.first_block {
+    background-color: silver;
+    display: flex;
+    margin: 20px;
+    height: 265px;
+    width: 1440px;
+    padding: 10px;
+    border: 3px solid red;
+    border-radius: 30px;
+
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+.second_block{
+    border: 3px solid red;
+    margin: 0;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #bef5e6;
+}
+
+.familyphoto{
+    margin-left: 21px;
+    border-radius: 201px;
+}
+
+.fotosetup{
+    position: relative;
+    left: 1229px;
+    bottom: 381px;
+    height: 200px;
+}
+
+.product-image{
+    height: 100px;
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 20px;
+
+}
+
+.flex{
+    display: flex;
+
+    column-gap: 20px;
+}
+
+.product-title{
+    border: 2px solid #49dc16;
+    border-radius: 6px;
+    width: 200px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 39px;
+
+}
