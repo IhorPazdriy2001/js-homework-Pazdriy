@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="" content="0; ">
+    <title>Title</title>
+    <style>
+        .wrap{
+            display: flex;
+        }
+        .product{
+            width: 200px;
+            background: saddlebrown;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="wrap">
+
+    <div class="product">
+        <h2>product title 1</h2>
+        <p>lorem ipsum 1</p>
+    </div>
+
+
+    <div class="product">
+        <h2>product title 2</h2>
+        <p>lorem ipsum2</p>
+    </div>
+
+</div>
+
+
+
+
+<script>
+    //bytag виводить по тегу
+    // let metalist = (document.head.getElementsByTagName('meta'))
+    // console.log(document.head.getElementsByTagName('title'))
+    // console.log(metalist)
+    // for (let metalistelements of metalist){
+    //     console.log(metalistelements)
+    //     console.log((metalistelements.attributes))
+    // }
+    // let children = document.head.children
+    // console.log(children);
+
+    // let bodychildren = document.body.children;
+    // console.log(bodychildren);
+
+    //byclass виводить по класу
+    let findproduct = document.getElementsByClassName('product')
+    console.log(findproduct);
+    for (let findproductelm of findproduct){
+        // console.log(findproductelm)
+        findproductelm.classList.add('added1')
+        findproductelm.classList.add('added2')
+    }
+    let findH= findproduct[0].children[0]
+    console.log(findH);
+
+</script>
+</body>
+</html>
