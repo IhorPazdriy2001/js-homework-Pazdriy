@@ -81,3 +81,4 @@
 // let change_text2 = document.getElementsByClassName('text2')
 // console.log(change_text2[0])
 // change_text2[0].innerText = 'sep-2021'
+//
