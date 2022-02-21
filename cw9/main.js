@@ -73,113 +73,113 @@
 //     divElements.appendChild(divPhoto)
 // }
 
-let coursesArray = [
-    {
-        title: 'JavaScript Complex',
-        monthDuration: 5,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
-    },
-    {
-        title: 'Java Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'java core',
-            'java advanced']
-    },
-    {
-        title: 'Python Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'angular',
-            'aws',
-            'docker',
-            'python core',
-            'python advanced']
-    },
-    {
-        title: 'QA Complex',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
-    },
-    {
-        title: 'FullStack',
-        monthDuration: 7,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'react',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'node.js',
-            'python',
-            'java']
-    },
-    {
-        title: 'Frontend',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
-    }
-];
-// Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих
-// властивостей, для властивості modules зробити список з елементами
-// Приклад структири знаходиться у файлі example.png
-for (const coursesElement of coursesArray) {
-    ///////////////////////////////////////////////////////
-    
-    let Div = document.createElement('div')
-    document.body.appendChild(Div)
-
-    ////////////////////////////////////////////////////////
-
-    let divtitle = document.createElement('div')
-    divtitle.innerText = `${coursesElement.title}`
-    Div.appendChild(divtitle)
-
-    ////////////////////////////////////////////////////////
-
-    let divmonth = document.createElement('div')
-    divmonth.innerText = `${coursesElement.monthDuration}`
-    Div.appendChild(divmonth)
-
-    ////////////////////////////////////////////////////////
-
-    let divhour = document.createElement('div')
-    divhour.innerText = `${coursesElement.hourDuration}`
-    Div.appendChild(divhour)
-    
-    /////////////////////////////////////////////////////////
-    let create_ul = document.createElement('ul')
-
-    for (const mitem of coursesElement.modules) {
-        let create_li = document.createElement('li')
-        create_li.innerText = mitem
-        create_ul.appendChild(create_li)
-
-    }
-
-    Div.appendChild(create_ul)
-
-
-}
+// let coursesArray = [
+//     {
+//         title: 'JavaScript Complex',
+//         monthDuration: 5,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+//     },
+//     {
+//         title: 'Java Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'java core',
+//             'java advanced']
+//     },
+//     {
+//         title: 'Python Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'python core',
+//             'python advanced']
+//     },
+//     {
+//         title: 'QA Complex',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+//     },
+//     {
+//         title: 'FullStack',
+//         monthDuration: 7,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'react',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'node.js',
+//             'python',
+//             'java']
+//     },
+//     {
+//         title: 'Frontend',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+//     }
+// ];
+// // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих
+// // властивостей, для властивості modules зробити список з елементами
+// // Приклад структири знаходиться у файлі example.png
+// for (const coursesElement of coursesArray) {
+//     ///////////////////////////////////////////////////////
+//
+//     let Div = document.createElement('div')
+//     document.body.appendChild(Div)
+//
+//     ////////////////////////////////////////////////////////
+//
+//     let divtitle = document.createElement('div')
+//     divtitle.innerText = `${coursesElement.title}`
+//     Div.appendChild(divtitle)
+//
+//     ////////////////////////////////////////////////////////
+//
+//     let divmonth = document.createElement('div')
+//     divmonth.innerText = `${coursesElement.monthDuration}`
+//     Div.appendChild(divmonth)
+//
+//     ////////////////////////////////////////////////////////
+//
+//     let divhour = document.createElement('div')
+//     divhour.innerText = `${coursesElement.hourDuration}`
+//     Div.appendChild(divhour)
+//
+//     /////////////////////////////////////////////////////////
+//     let create_ul = document.createElement('ul')
+//
+//     for (const mitem of coursesElement.modules) {
+//         let create_li = document.createElement('li')
+//         create_li.innerText = mitem
+//         create_ul.appendChild(create_li)
+//
+//     }
+//
+//     Div.appendChild(create_ul)
+//
+//
+// }
